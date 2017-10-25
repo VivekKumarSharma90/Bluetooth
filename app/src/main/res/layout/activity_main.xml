@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/turn_on"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="Turn On"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />t
+
+        <Button
+            android:id="@+id/turn_off"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="Turn Off"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />t
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_first"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/visible"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="Visible"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />t
+
+        <Button
+            android:id="@+id/paired_devices"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="Paired Devices"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />t
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/linear_second"
+        android:gravity="center"
+        android:text="Paired Devices" />
+
+    <ListView
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"></ListView>
+</RelativeLayout>
